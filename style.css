@@ -10,7 +10,7 @@
 .color-bg-green-3 {background: #7FC938;}
 .color-black-1 {color: #000000;}
 .color-bg-black-1 {background: #000000;}
-.color-black-2{background: #101010;}
+.color-black-2{color: #101010;}
 .color-bg-black-2{background: #101010;}
 .color-black-3 {color:#252525;}
 .color-bg-black-3 { background:#252525;}
@@ -247,6 +247,14 @@ input:checked + .slider:before {
 	top:0;
 	display:none;
 }
+/* accordion */
+.accordion-body {
+	display: none;
+}
 .open {
-	display: block;;
+	display: block;
+}
+/* check box background color */
+input[type="checkbox"] {
+	
 }
