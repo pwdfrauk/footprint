@@ -1,0 +1,252 @@
+.color-bg {
+	background:#101010;
+}
+.color-green {color:#1B9F4F;}
+.color-green-1 {color:#1CA953;}
+.color-bg-green-1 {background:#1CA953; }
+.color-bg-green-2 {background: #0F813B;} 
+.color-green-2 {color:#0F813B;}
+.color-green-3 {color: #7FC938;}
+.color-bg-green-3 {background: #7FC938;}
+.color-black-1 {color: #000000;}
+.color-bg-black-1 {background: #000000;}
+.color-black-2{background: #101010;}
+.color-bg-black-2{background: #101010;}
+.color-black-3 {color:#252525;}
+.color-bg-black-3 { background:#252525;}
+.color-white-2 {color: #CDCDCD;}
+.border-color-green-1 {border-color:#1CA953; }
+.color-light-grey {
+	color:#C9C9C9;
+}
+.color-red-1 {
+	color:#E92000;
+}
+.color-mayroun {
+	color:#A81E1E;
+}
+.color-black-3 {
+	color:#252525;
+}
+.bg-lock-screen-color {
+	background: rgba(16, 16, 16, 0.8);
+}
+.color-bg-black-3 {
+	background:#252525;
+}
+.color-grey-6 {
+	color:#F2F2F2;
+}
+.text-link:hover {
+	color:#1B9F4F;
+	text-decoration: underline;
+}
+.before::before {
+	content:'';
+	width: 100%;
+	display: block;
+	background: #787878;
+	height: 2px;
+	margin-bottom: 5px;
+}
+
+.step.before.active::before {
+	content:'';
+	width: 100%;
+	display: block;
+	background: #0F813B;
+	height: 2px;
+	margin-bottom: 5px;
+}
+.before.active-white::before {
+	content:'';
+	width: 100%;
+	display: block;
+	background: #ffffff;
+	height: 2px;
+	margin-bottom: 5px;
+}
+
+.after::after {
+	content:'';
+	width: 100%;
+	display: block;
+	background: #828282;
+	height: 2px;
+	margin-top:24px;
+}
+.after.active::after {
+	content:'';
+	width: 100%;
+	display: block;
+	background: #0F813B;
+	height: 2px;
+	margin-top:24px;
+}
+.after.active-white::after {
+	content:'';
+	width: 100%;
+	display: block;
+	background: #fff;
+	height: 2px;
+	margin-top:24px;
+}
+.Category-product.active {
+	border:2px solid #1B9F4F;
+}
+.analytic-produts.active {
+	border:2px solid #1B9F4F;
+}
+.step.active p
+ {
+	color:#ffffff;
+}
+.step.active-white p {
+	color:#ffffff;
+}
+.logo {
+	width: 110px;
+	height: 24px;
+}
+
+/* toggle shitch */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 44px;
+  height: 22px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 22px;
+  width: 22px;
+  left: 0px;
+  bottom: 0px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+ background:#1CA953;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+/* category page */
+.Category-product {
+	cursor:pointer;
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+/* tooltip css */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+}
+/* end tool tip */
+
+/* on hover showing */
+.hover-body {
+	display: none;
+	position:absolute;
+	top: -147px;
+	left: 182px;
+	width: 196px; 
+	border-color:#1CA953;
+	z-index: 999;
+}
+.hover-show {
+	display: block;
+}
+/* analytic page css */
+.analytic-produts-one {
+	background: url('./images/analytic-img.png')
+}
+.analytic-produts-two {
+	background: url('./images/analytic-img2.png')
+}
+.analytic-produts-tree {
+	background: url('./images/alalytic-img3.png')
+}
+.analytic-produts-four {
+	background: url('./images/analytic-img4.png')
+}
+
+/* plan table responsive */
+@media only screen and (min-width: 360px) and (max-width:768px) {
+      .plan-section .plan-description .plan-head,
+      .plan-section .plan-future .plan-future-head {
+      	  height: 121px;
+      }
+      .plan-section .plan-description .plan-info,
+      .plan-section .plan-future .plan-future-body {
+      	height: 100px;
+      }
+}
+/* prodcut page ponpup css */
+.popup-product-category {
+	position:absolute;
+	top:0;
+	height: 100%;
+	display: none;
+}
+/* plan switch page pop up box */
+.drowngrad-popup {
+	height: 100%;
+	top:0;
+	display:none;
+}
+.congreat-popup {
+	height: 100%;
+	top:0;
+	display:none;
+}
+.open {
+	display: block;;
+}

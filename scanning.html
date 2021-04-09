@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+	<!-- fontawesom-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+       <!-- tellwind css cdn -->
+     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+     <!-- custom css -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body class="color-bg" onload="scanning()">
+	<section class="Category-section">
+		<div class="container mx-auto  p-5 mt-10">
+				<div class="flex justify-between mb-8 md:mb-12">
+					<div class="w-1/3">
+						<!-- add  active for active on green color and add class active-white -->
+						<div class="step1 before step active-white step  px-1">
+							<h4 class="color-white-2 text-sm ">Step 1</h4>
+							<p class="color-white-2 text-sm font-bold">Category</p>
+						</div>
+					</div>
+					<div class="w-1/3">
+						<!-- add  active for active on green color and add class active-white -->
+						<div class="step2 step active  before px-1">
+							<h4 class="color-white-2 text-sm ">Step 1</h4>
+							<p class="color-white-2 text-sm font-bold">Category</p>
+						</div>
+					</div>
+					<div class="w-1/3">
+						<div class="step3 step before px-1">
+							<h4 class="color-white-2 text-sm ">Step 1</h4>
+							<p class="color-white-2 text-sm font-bold">Category</p>
+						</div>
+					</div>
+				</div>
+			<!-- step line -->
+			
+			<!-- selling product area -->
+			<div>
+				<h2 class="text-2xl md:text-5xl text-white font-bold mb-14">Let’s have a look...</h2>
+				<div class="flex justify-center items-center h-48 mt-20 ">
+					<div class="relative w-2/4">
+					  <div class="overflow-hidden h-0.5 mb-4 text-xs flex rounded bg-white">
+					    <div id="barStatus" style="width:10%" class="shadow-md flex flex-col text-center whitespace-nowrap text-white justify-center color-bg-green-1">
+					    </div>
+					  </div>
+					  <p class="text-sm color-white-2 text-center">Calculating your footprint...</p>
+					  <h3 class="text-white text-2xl  text-center mt-16">Footprint estimations will be shared <br> later and can be further specified.</h3>
+					</div>
+
+				</div>
+				<a id="complate-scanning-goThisLinks" class="" href="scanning-result.html"></a>
+			</div>
+			<!-- footer button -->
+		<div class="flex justify-between items-center mt-28 mb-10">
+			<img class="logo" src="images/footprintlogo.png">
+		</div>
+		</div>
+	</section>
+	
+	<script>
+		var width = 10;
+		var redirectPage = document.getElementById('complate-scanning-goThisLinks');
+			function scanning() {
+			var elem = document.getElementById("barStatus");   
+			var id = setInterval(growProgressBar, 100);
+			function growProgressBar() {
+				if (width >= 99) {
+				clearInterval(id);
+				redirectPage.click();
+				} else {
+				width=width+1; 
+				elem.style.width = width + '%'; 
+				}
+			}
+			}
+	</script>
+
+</body>
+</html>
