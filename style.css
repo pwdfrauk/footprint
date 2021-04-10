@@ -229,6 +229,16 @@ input:checked + .slider:before {
       	height: 100px;
       }
 }
+@media only screen and (min-width: 200px) and (max-width:359px) {
+      .plan-section .plan-description .plan-head,
+      .plan-section .plan-future .plan-future-head {
+      	  height: 141px;
+      }
+      .plan-section .plan-description .plan-info,
+      .plan-section .plan-future .plan-future-body {
+      	height: 150px;
+      }
+}
 /* prodcut page ponpup css */
 .popup-product-category {
 	position:absolute;
