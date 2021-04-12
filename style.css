@@ -217,7 +217,20 @@ input:checked + .slider:before {
 .analytic-produts-four {
 	background: url('./images/analytic-img4.png')
 }
-
+/* scanning-progress-area */
+.scanning-progress-area {
+	height: 50vh;
+}
+@media only screen and (min-width: 768px) and (max-width:1024px) {
+	.scanning-progress-area {
+		height: 80vh;
+	}
+}
+@media only screen and (min-width: 360px) and (max-width:768px) {
+	.scanning-progress-area {
+		height: 40vh;
+	}
+}
 /* plan table responsive */
 @media only screen and (min-width: 360px) and (max-width:768px) {
       .plan-section .plan-description .plan-head,
